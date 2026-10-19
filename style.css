@@ -1,0 +1,429 @@
+
+/* GENERAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fffaf5;
+    color: #292929;
+    line-height: 1.6;
+}
+
+/* COLLEGE HEADER */
+.college-header {
+    text-align: center;
+    padding: 30px 15px 40px;
+    background: white;
+    border-bottom: 4px solid #df682e;
+}
+
+.college-logo {
+    width: 150px;
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.college-header h1 {
+    color: #c65322;
+    font-size: 28px;
+    margin: 8px 0;
+}
+
+.college-header h2 {
+    color: #333;
+    font-size: 19px;
+    margin: 5px 0;
+}
+
+.welcome {
+    margin-top: 25px;
+    color: #555;
+    font-size: 17px;
+}
+
+.college-header .fest-name {
+    color: #df682e;
+    font-size: 40px;
+    margin: 8px 0;
+}
+
+.tagline {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* FEST DATE */
+.fest-date {
+    display: inline-block;
+    background: #fff0e5;
+    color: #a83e17;
+    border: 2px solid #df682e;
+    padding: 12px 25px;
+    margin: 15px 0 25px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.fest-date:hover {
+    background: #df682e;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    background: #df682e;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #a83e17;
+    transform: translateY(-3px);
+}
+
+/* NAVIGATION BAR */
+.navbar {
+    background: #20232a;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background: #df682e;
+}
+
+/* HOME / HERO SECTION */
+.hero {
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #fff0e5, #ffcfad);
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.small-heading {
+    color: #a83e17;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    color: #a83e17;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    margin-bottom: 20px;
+}
+
+/* COMMON SECTION STYLES */
+.section {
+    padding: 55px 7%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 32px;
+    color: #c65322;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* EVENTS SECTION */
+.event-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.event-card {
+    background: white;
+    padding: 25px 18px;
+    border-radius: 12px;
+    border: 1px solid #f0d9cc;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    transition: 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+}
+
+.event-icon {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.event-card h3 {
+    color: #a83e17;
+    margin-bottom: 12px;
+}
+
+.event-card p {
+    font-size: 14px;
+}
+
+.event-label {
+    display: inline-block;
+    background: #fff0e5;
+    color: #a83e17;
+    margin-top: 15px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+/* SCHEDULE SECTION */
+.schedule-section {
+    background: #fff0e5;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+}
+
+th,
+td {
+    border: 1px solid #ead7cc;
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background: #df682e;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background: #fff7f1;
+}
+
+tbody tr:hover {
+    background: #ffe5d3;
+}
+
+.note {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #666;
+}
+
+/* HIGHLIGHTS SECTION */
+.highlight-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.highlight-card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    transition: 0.3s;
+}
+
+.highlight-card:hover {
+    background: #fff0e5;
+    transform: scale(1.03);
+}
+
+.highlight-card span {
+    font-size: 42px;
+}
+
+.highlight-card h3 {
+    color: #a83e17;
+    margin: 12px 0;
+}
+
+/* ORGANIZERS SECTION */
+.organizers-section {
+    background: #fff0e5;
+}
+
+.organizer-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.organizer-card {
+    background: white;
+    padding: 25px 15px;
+    border-radius: 12px;
+    border-bottom: 4px solid #df682e;
+    transition: 0.3s;
+}
+
+.organizer-card:hover {
+    transform: translateY(-5px);
+}
+
+.organizer-icon {
+    font-size: 40px;
+}
+
+.organizer-card h3 {
+    color: #a83e17;
+    margin: 10px 0;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+    background: #20232a;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact-section h2 {
+    color: #ffad78;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.contact-card {
+    background: white;
+    color: #292929;
+    max-width: 420px;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.contact-card h3 {
+    color: #c65322;
+    margin-bottom: 12px;
+}
+
+.contact-card a {
+    color: #c65322;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+.contact-note {
+    color: #ddd;
+    font-size: 13px;
+}
+
+/* FOOTER */
+.footer {
+    background: #14161b;
+    color: #ddd;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 14px;
+}
+
+/* TABLET RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+    .event-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .highlight-container,
+    .organizer-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* MOBILE RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+    .college-header h1 {
+        font-size: 21px;
+    }
+
+    .college-header .fest-name {
+        font-size: 30px;
+    }
+
+    .fest-date {
+        font-size: 16px;
+        padding: 10px 16px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .section {
+        padding: 40px 5%;
+    }
+
+    .event-container {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        position: static;
+    }
+
+    .navbar a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
